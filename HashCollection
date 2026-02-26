@@ -1,0 +1,26 @@
+//demostration of how ArrayList works and using linkedhash set and their working
+import java.util.*;
+class HashCollection{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        try{
+        ArrayList<Integer> age=new ArrayList<Integer>();
+        System.out.println("Enter the no Of elements to enter");
+        int n=sc.nextInt();
+        
+        for(int i=0;i<n;i++){
+            age.add(sc.nextInt());
+            
+        }
+       Set <Integer> newage= new LinkedHashSet<Integer>(age);
+       ArrayList<Integer> u_age=new ArrayList<Integer>(newage);
+       Collections.sort(u_age);
+       System.out.println(u_age);
+        }catch(Exception e){
+            System.out.println("You have entered the wrong input type");
+        }
+        sc.close();
+    }
+    
+}
