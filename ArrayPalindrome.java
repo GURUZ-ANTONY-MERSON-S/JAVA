@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class ArrayPalindrome{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        
+        int s=0;
+        int e=n-1;
+        
+        while(s<=e){
+            if(arr[s]!=arr[e]){
+                System.out.println("Not a palindrome array.");
+                return;
+            }
+            s++;
+            e--;
+        }
+        System.out.println("The given array is pallindrome");
+    }
+}
