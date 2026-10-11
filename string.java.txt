@@ -1,0 +1,76 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+
+
+		System.out.println("Enter the first string:");
+		String a=sc.nextLine();
+
+		System.out.println("Enter the second string:");
+		String b=sc.nextLine();
+
+		System.out.println("Equals or not: "+a.equalsIgnoreCase(b));
+		System.out.println("Equals or not: "+a.equals(b));
+	/*	System.out.println("Character at position: "+b.charAt(2));
+		
+		System.out.println("The length of the 'a' String is : "+a.length() );
+		
+		System.out.println("The upper case :  "+a.toUpperCase());
+		System.out.println("The lower case :  "+a.toLowerCase());*/
+		
+		System.out.println("The Trim operations: "+b.trim());
+		System.out.println("The Substring :"+a.substring(2,4));
+		System.out.println("the a string contains 'guruz' "+a.contains("guruz"));
+		System.out.println("Is the first String start  Space?: "+a.startsWith(" "));
+	}
+}import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+
+
+		System.out.println("Enter the first string:");
+		String a=sc.nextLine();
+
+		System.out.println("Enter the second string:");
+		String b=sc.nextLine();
+
+		System.out.println("Equals or not: "+a.equalsIgnoreCase(b));
+		System.out.println("Equals or not: "+a.equals(b));
+	/*	System.out.println("Character at position: "+b.charAt(2));
+		
+		System.out.println("The length of the 'a' String is : "+a.length() );
+		
+		System.out.println("The upper case :  "+a.toUpperCase());
+		System.out.println("The lower case :  "+a.toLowerCase());*/
+		
+		System.out.println("The Trim operations: "+b.trim());
+		System.out.println("The Substring :"+a.substring(2,4));
+		System.out.println("the a string contains 'guruz' "+a.contains("guruz"));
+		System.out.println("Is the first String start  Space?: "+a.startsWith(" "));
+
+
+
+                 //System.out.println("Is the first String start  Space?: "+a.startsWith(" "));
+	        System.out.println("Replace:"+a.replace("Guruz","Anter"));
+	        System.out.println("Replace all:"+b.replaceAll(" ",""));
+	    
+	        String str="  ";
+	        System.out.println("I iis empty? "+str.isEmpty());
+	        System.out.println("Is is blank?: "+str.isBlank());
+	    
+	    
+	        char[] arr=a.toCharArray();
+	        for(char c: arr){
+	            System.out.print(c+"  ");
+	        }
+
+		  System.out.println("The times it print: "a.repeat(4));
+
+	}
+}
